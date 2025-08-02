@@ -18,10 +18,12 @@ main() {
   */
 
 
-  stdout.write('Ingrese un numero: ');
-  int numero = int.parse(stdin.readLineSync() ?? '0');
+  stdout.write('¿Cúal es la base de la tabla?: ');
+  int base = int.parse(stdin.readLineSync() ?? '0');
 
   for (int i = 1; i <= 10; i++) {
-    print('$numero * $i = ${numero * i}');
+    print('$base * $i = ${i * base}');
   }
+
+  
 }
