@@ -61,7 +61,6 @@ main() {
   villanos.add('Thanos');
   villanos.add('Thanos');
 
-
   var villanosSet = villanos.toSet();
 
   print(villanosSet.toList());
@@ -70,17 +69,16 @@ main() {
 
   //=== Tipos de datos Sets ===
 
- // var villanos2 = {'Lex', 'Red Skull', 'Doom'};
+  // var villanos2 = {'Lex', 'Red Skull', 'Doom'};
   Set<String> villanos2 = {'Lex', 'Red Skull', 'Doom'};
 
   villanos2.add('Thanos');
 
   print(villanos2);
 
-
   //=== Tipos de datos Maps ===
 
-  Map<String, int> villanos3 = {'Lex': 1, 'Red Skull': 2, 'Doom': 3}; 
+  Map<String, int> villanos3 = {'Lex': 1, 'Red Skull': 2, 'Doom': 3};
 
   villanos3['Thanos'] = 4;
 
@@ -93,22 +91,23 @@ main() {
     'isAlive': true,
   };
 
+  Map<int, dynamic> thor = {1: 'Tony Stark', 2: 'Inteligencia', 3: 50, 4: true};
 
+  // print(thor);
 
-  Map<int, dynamic> thor = {
-    1: 'Tony Stark',
-    2: 'Inteligencia',
-    3: 50,
-    4: true,
-  };
+  // print(ironman['name']);
+  // print(ironman['power']);
+  // print(ironman['age']);
+  // print(ironman['isAlive']);
 
-  print(thor);
+  Map<String, dynamic> capitan = new Map();
+  // capitan.addAll({
+  //   'nombre': 'Steve Rogers',
+  //   'power': 'Fuerza',
+  //   'age': 100,
+  //   'isAlive': true,
+  // });
 
-  print(ironman['name']); 
-  print(ironman['power']); 
-  print(ironman['age']); 
-  print(ironman['isAlive']); 
-
-
-
+  capitan.addAll(ironman);
+  print(capitan);
 }
